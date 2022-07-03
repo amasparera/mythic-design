@@ -1,0 +1,1 @@
+enum TypeSearch {search,populer,productNew,highPrice,lowPrice,cosplay,illustration}
