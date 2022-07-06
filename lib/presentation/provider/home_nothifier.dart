@@ -136,7 +136,9 @@ class HomeNotifier extends ChangeNotifier {
     service.init();
     service.onNothif.listen((value) {
       if (value != null) {
-        Navigator.pushNamed(context, value);
+        final data = value;
+        service.onNothif.value = null;
+        Navigator.pushNamed(context, data);
       }
     });
 
